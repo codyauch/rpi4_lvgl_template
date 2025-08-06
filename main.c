@@ -18,7 +18,7 @@ int main(void)
     lv_linux_fbdev_set_file(disp, "/dev/fb0"); // linux framebuffer device
 
     // Set up the touchscreen
-    lv_indev_t *touch = lv_evdev_create(LV_INDEV_TYPE_POINTER, "/dev/input/event5"); // RPi TFT touchscreen device
+    lv_indev_t *touch = lv_evdev_create(LV_INDEV_TYPE_POINTER, "/dev/input/event4"); // RPi TFT touchscreen device
     lv_indev_set_display(touch, disp);
 
     // Set the background colour
