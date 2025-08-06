@@ -3,7 +3,7 @@
 #
 CC 				?= gcc
 LVGL_DIR_NAME 	?= lvgl
-LVGL_DIR 		?= .
+LVGL_DIR 		?= ${shell pwd}
 
 WARNINGS		:= -Wall -Wshadow -Wundef -Wmissing-prototypes -Wno-discarded-qualifiers -Wextra -Wno-unused-function -Wno-error=strict-prototypes -Wpointer-arith \
 					-fno-strict-aliasing -Wno-error=cpp -Wuninitialized -Wmaybe-uninitialized -Wno-unused-parameter -Wno-missing-field-initializers -Wtype-limits \
